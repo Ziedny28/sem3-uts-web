@@ -1,0 +1,179 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {}
+
+.orange {
+    color: orange;
+}
+
+.button {
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    transition: transform .2s;
+}
+
+
+.button:hover {
+    transform: scale(1.5);
+}
+
+.black-bg {
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+}
+
+nav li {
+    padding: 0 50px;
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+nav li a:hover {
+    color: orange;
+}
+
+.img-place {
+    width: 320px;
+    height: 240px;
+    background-color: whitesmoke;
+    transition: transform .5s;
+}
+
+.img-place:hover {
+    transform: scale(1.5);
+}
+
+.img-place img {
+    object-fit: fill;
+    width: 320px;
+}
+
+.flex {
+    display: flex;
+}
+
+.pr-1 {
+    padding-right: 100px;
+}
+
+.pt-1 {
+    padding-top: 100px;
+}
+
+.pl-1 {
+    padding-left: 100px;
+}
+
+.pr-2 {
+    padding-right: 200px;
+}
+
+.pr-05 {
+    padding-right: 100px;
+}
+
+.pl-05 {
+    padding-left: 50px;
+}
+
+.ml-1 {
+    margin-left: 100px;
+}
+
+.ml-4 {
+    margin-left: 400px;
+}
+
+.mr-1 {
+    margin-right: 100px;
+}
+
+.mt-1 {
+    margin-top: 100px;
+}
+
+.mt-03 {
+    margin-top: 30px;
+}
+
+.mr-05{
+    margin-right: 50px;
+}
+
+.ml-05{
+    margin-left: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mid {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.icons {
+    width: 50px;
+}
+
+.orange-bg {
+    background-color: rgb(245, 221, 176);
+}
+
+.white {
+    color: white;
+}
+
+/* .img-comment {
+    width: 500px;
+    height: 500px;
+    background-color: whitesmoke;
+    margin-left: 200px;
+} */
+
+#nav-button-a {
+    transition: none;
+}
+
+#nav-button-a:hover {
+    color: white
+}
+
+#next-button {
+    color: #555;
+    transition: color .5s;
+}
+
+#next-button:hover {
+    color: black;
+}
+
+#prev-button {
+    color: #555;
+    transition: color .5s;
+}
+
+#prev-button:hover {
+    color: black;
+}
