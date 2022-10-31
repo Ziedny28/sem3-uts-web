@@ -11,6 +11,80 @@
     </style>
     <script src="https://kit.fontawesome.com/59dbec1eb7.js" crossorigin="anonymous"></script>
     <title>NGLMERIAH</title>
+    <style>
+        @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+        .container {
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        .carousel {
+            /* border: 2px solid #ccc; */
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            height: 100%;
+            display: flex;
+            width: 400%;
+            /* border: 1px solid red; */
+            transition: all 0.3s;
+        }
+
+        .slider section {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .controls .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .controls .arrow i {
+            font-size: 60px;
+        }
+
+        .arrow.left {
+            left: 10px; 
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        .controls ul {
+/* changed */
+            position: absolute;
+            top:1200px;
+            left: 50%;
+            transform: translate(-50%);
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        .controls ul li {
+            width: 14px;
+            height: 14px;
+            border: 2px solid #333;
+            border-radius: 50px;
+            margin: 10px;
+            background: #333;
+        }
+
+        .controls ul li.selected {
+            background: transparent;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,6 +97,7 @@
                     <ul>
                         <li><a href="">Discover</a></li>
                         <li><a href="">Services</a></li>
+                        <li><a href="">Comunity</a></li>
                         <li><a href="">About us</a></li>
                         <li><a href="">Login</a></li>
                         <li>
@@ -39,9 +114,11 @@
                     <div class="words-head-content" style="width: 400px;">
                         <h1>NGLMERIAH</h1>
                         <h1 class="orange">YOUR TRAVEL MATE</h1>
-                        <p>Butuh melepaskan diri dari kesibukan dan healing? pas banget, NGLMERIAH menyediakan layanan
-                            travel, ke seluruh Indonesia, untuk membantu anda melepas rasa penat. kami membantu anda
-                            dalam memilih hotel, juga mendapatkan jasa travel. 
+                        <p>Butuh melepaskan diri dari kesibukan dan healing? pas banget, Lorem ipsum dolor sit, amet
+                            consectetur
+                            adipisicing elit. Omnis ab quisquam dolor eveniet iure, quae laudantium? Reiciendis sint
+                            expedita
+                            numquam?
                         </p>
                         <div class="read-more mt-1 pl-1 pr-1">
                             <button class="button">Baca selengkapnya</button>
@@ -96,7 +173,7 @@
                                     <p>Monumen Yesus tertinggi ke 2 di Asia dan ke 4 di Dunia</p>
                                     <div class="flex">
                                         <h4>Rp. 1.000.000/pesanan</h4>
-                                        <button style="width: 100px;" class="button mt-02 ml-01">pesan</button>
+                                        <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
                                     </div>
                                 </div>
                             </div>
@@ -123,13 +200,13 @@
                             <div id="destination-box-1" class="destinations-box pr-05">
                                 <div class="destination-img">
                                     <div class="img-place">
-                                        <img src="https://4.bp.blogspot.com/-tHcgrh2DUWE/VLsIXuvlw9I/AAAAAAAACCs/RbBDWlLaua0/s1600/108.jpg"
+                                        <img src="https://th.bing.com/th/id/OIP.lMMQjr-IXwjeUhgigYGINAHaEz?pid=ImgDet&rs=1"
                                             alt="">
                                     </div>
-                                    <h4>Jayapuura</h4>
-                                    <p>Kota Indah di timur Indonesia</p>
+                                    <h4>Bromo</h4>
+                                    <p>Gunung tertinggi di pulau jawa</p>
                                     <div class="flex">
-                                        <h4>Rp. 10.000.000/pesanan</h4>
+                                        <h4>Rp. 1.000.000/pesanan</h4>
                                         <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
                                     </div>
                                 </div>
@@ -138,11 +215,11 @@
                             <div id="destination-box-2" class="destinations-box  pr-05">
                                 <div class="destination-img">
                                     <div class="img-place">
-                                        <img src="https://cdn.christravelblog.com/wp-content/uploads/2020/02/colonial-house-indonesia-bandung-city-tour-must-see-colonial-places-IMG_0724.jpg"
+                                        <img src="https://www.libur.co/wp-content/uploads/2020/08/Tempat-Wisata-Manado.jpg"
                                             alt="">
                                     </div>
-                                    <h4>Bandung</h4>
-                                    <p>Paris Van Java</p>
+                                    <h4>Monumen Yesus Memberkati</h4>
+                                    <p>Monumen Yesus tertinggi ke 2 di Asia dan ke 4 di Dunia</p>
                                     <div class="flex">
                                         <h4>Rp. 1.000.000/pesanan</h4>
                                         <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
@@ -153,13 +230,13 @@
                             <div id="destination-box-3" class="destinations-box">
                                 <div class="destination-img">
                                     <div class="img-place">
-                                        <img src="https://storage.googleapis.com/mcp_236blog/uploads/2017/09/Featured_Bali_v2-1920x1080.jpg"
+                                        <img src="https://static.republika.co.id/uploads/images/inpicture_slide/komodo-di-taman-nasional-pulau-komodo-_130118155917-868.jpg"
                                             alt="">
                                     </div>
-                                    <h4>Bali</h4>
-                                    <p>Pulau seribu pura</p>
+                                    <h4>Pulau Komodo</h4>
+                                    <p>Habitat naga nyata</p>
                                     <div class="flex">
-                                        <h4>Rp. 5.000.000/pesanan</h4>
+                                        <h4>Rp. 1.000.000/pesanan</h4>
                                         <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
                                     </div>
                                 </div>
@@ -171,11 +248,11 @@
                             <div id="destination-box-1" class="destinations-box pr-05">
                                 <div class="destination-img">
                                     <div class="img-place">
-                                        <img src="https://cdn-u1-gnfi.imgix.net/post/large-holbung-hill-view-at-toba-lake-sumatera-indonesia-0c6f46cefbcf08ccb86f5df01e34be43.jpg"
+                                        <img src="https://th.bing.com/th/id/OIP.lMMQjr-IXwjeUhgigYGINAHaEz?pid=ImgDet&rs=1"
                                             alt="">
                                     </div>
-                                    <h4>Danau toba</h4>
-                                    <p>Danau di bekas letusan gunung berapi</p>
+                                    <h4>Bromo</h4>
+                                    <p>Gunung tertinggi di pulau jawa</p>
                                     <div class="flex">
                                         <h4>Rp. 1.000.000/pesanan</h4>
                                         <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
@@ -186,12 +263,13 @@
                             <div id="destination-box-2" class="destinations-box  pr-05">
                                 <div class="destination-img">
                                     <div class="img-place">
-                                        <img src="https://www.holidify.com/images/bgImages/PADANG.jpg" alt="">
+                                        <img src="https://www.libur.co/wp-content/uploads/2020/08/Tempat-Wisata-Manado.jpg"
+                                            alt="">
                                     </div>
-                                    <h4>Padang</h4>
-                                    <p>Ibu kota provinsi sumatra barat</p>
+                                    <h4>Monumen Yesus Memberkati</h4>
+                                    <p>Monumen Yesus tertinggi ke 2 di Asia dan ke 4 di Dunia</p>
                                     <div class="flex">
-                                        <h4>Rp. 2.000.000/pesanan</h4>
+                                        <h4>Rp. 1.000.000/pesanan</h4>
                                         <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
                                     </div>
                                 </div>
@@ -200,11 +278,11 @@
                             <div id="destination-box-3" class="destinations-box">
                                 <div class="destination-img">
                                     <div class="img-place">
-                                        <img src="https://th.bing.com/th/id/OIP.Ba8ksvDwtgZe_ozs4E27UwHaE8?pid=ImgDet&rs=1"
+                                        <img src="https://static.republika.co.id/uploads/images/inpicture_slide/komodo-di-taman-nasional-pulau-komodo-_130118155917-868.jpg"
                                             alt="">
                                     </div>
-                                    <h4>Batam</h4>
-                                    <p>kota yang diharapkan menandingi singapura</p>
+                                    <h4>Pulau Komodo</h4>
+                                    <p>Habitat naga nyata</p>
                                     <div class="flex">
                                         <h4>Rp. 1.000.000/pesanan</h4>
                                         <button style="width: 100px;" class="button mt-03 mr-1">pesan</button>
@@ -297,25 +375,25 @@
         </div>
     </div>
 
-    
     <div class="content-explore pt-1">
-        <div class="text-center reveal">
+        <div class="text-center">
             <h1>Start your Exploration in</h1>
             <h1>The Beautiful <span class="orange">Inodnesia</span></h1>
         </div>
 
-        <img class = "reveal" src="imgs/indonesia.jpg" alt="" width="100%">
+        <img src="imgs/indonesia.jpg" alt="" width="100%">
     </div>
 
-    <div class="content-comment pl-1 pt-1 flex reveal">
+    <div class="content-comment pl-1 pt-1 flex">
         <div class="comment" style="width: 400px;">
             <h2>What Explorers</h2>
             <h2>Say <span class="orange">About Us</span></h2>
-            <p>Very sceptical when I saw the price and paid for my trip. Called straight after to
-                confirm, which they did and also made some other requests which they did. Nothing on Agoda mentioned
-                breakfast but was a surprise when it was included on the day. All in all had a good experience. I'm sure
-                other negatives are true and potentially customer service might not be good but I didn't have to deal
-                with that this time, so will book with them until they let me down, saved quite a bit of cash.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem illum sed sit ea soluta nihil
+                repudiandae, voluptatum, in exercitationem et voluptas hic impedit? Dolore incidunt asperiores porro
+                eius
+                consequuntur quia fugiat minima sed quis vitae nesciunt consectetur nobis reiciendis cum, quos deleniti
+                iure
+                quas accusamus cumque excepturi dolor saepe.</p>
             <p>⭐⭐⭐⭐</p>
         </div>
 
@@ -324,17 +402,20 @@
         </div>
     </div>
 
-    <div class="content-start-to-explore mr-1 ml-1 pt-1 reveal">
+    <div class="content-start-to-explore mr-1 ml-1 pt-1">
         <div class="orange-bg br-10 text-center" style="width: 100%; height: 500px;">
             <div style=" width: 500px;" class="mid pt-1">
                 <h1>Start To</h1>
                 <h1 class="orange">
                     Explore Indonesia
                 </h1>
-                <p class="orange">
-                    karena Indonesia lebih luas dari pada yang anda bayangkan, memiliki rahasia dan keindahan yang
-                    menunggu ditemukan oleh anda. jadi tunggu apa lagi, order sekarang
-                    <button class="mt-1 button">Get Started</button>
+                <p class="orange">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur deserunt voluptate
+                    explicabo.
+                    Sapiente
+                    facilis, accusamus itaque, reiciendis nemo, eligendi explicabo praesentium temporibus ullam vitae ut
+                    eos
+                    libero? Doloremque, iure tempore.</p>
+                <button class="mt-1 button">Get Started</button>
             </div>
         </div>
     </div>
@@ -345,21 +426,21 @@
                 <h4 class="orange">
                     NGLMERIAH
                 </h4>
-                <p>Layanan travel yang tidak hanya tersedia di indonesia, namun juga tersedia secara internasional,dan
-                    terpercaya</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facere tenetur molestias? Doloremque
+                    tempore dolore neque in. Nostrum, harum architecto!</p>
             </div>
             <div class="footer-2 pr-2">
                 <h4>About</h4>
-                <p>NGLMERIAH</p>
+                <p>Lorem ipsum dolor sit.</p>
                 <p>Lorem ipsum dolor sit.</p>
                 <p>Lorem ipsum dolor sit.</p>
                 <p>Lorem ipsum dolor sit.</p>
             </div>
             <div class="footer-3">
                 <h4>Contact</h4>
-                <p>instagram</p>
-                <p>Fb</p>
-                <p>Whatsapp</p>
+                <p>socmed</p>
+                <p>socmed</p>
+                <p>socmed</p>
             </div>
             <div class="footer-imgs mid">
                 <h4>Copyright</h4>
@@ -372,7 +453,40 @@
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script>
+        const slider = document.querySelector('.slider')
+
+        const leftArrow = document.querySelector('.left')
+        const rightArrow = document.querySelector('.right')
+        const indicatorParents = document.querySelector('.controls ul')
+
+        var sectionIndex = 0
+
+        function setIndex() {
+            document.querySelector('.controls .selected').classList.remove('selected')
+            slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)'
+        }
+
+        document.querySelectorAll('.controls li').forEach(function (indicator, ind) {
+            indicator.addEventListener('click', function () {
+                sectionIndex = ind
+                setIndex()
+                indicator.classList.add('selected')
+            })
+        })
+
+        leftArrow.addEventListener('click', function () {
+            sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
+            setIndex()
+            indicatorParents.children[sectionIndex].classList.add('selected');
+        })
+
+        rightArrow.addEventListener('click', function () {
+            sectionIndex = (sectionIndex < 3) ? sectionIndex + 1 : 3
+            setIndex()
+            indicatorParents.children[sectionIndex].classList.add('selected');
+        })
+    </script>
 </body>
 
 </html>
