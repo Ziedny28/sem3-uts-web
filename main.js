@@ -1,56 +1,19 @@
-const slider = document.querySelector('.slider')
+window.addEventListener('scroll', reveal);
 
-const leftArrow = document.querySelector('.left')
-const rightArrow = document.querySelector('.right')
-const indicatorParents = document.querySelector('.controls ul')
+function reveal(){
+  var reveals = document.querySelectorAll('.reveal');
 
-var sectionIndex = 0
+  for(var i = 0; i < reveals.length; i++){
 
-function setIndex() {
-    document.querySelector('.controls .selected').classList.remove('selected')
-    slider.style.transform = 'translate(' + (sectionIndex) * -25 + '%)'
-}
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
 
-document.querySelectorAll('.controls li').forEach(function (indicator, ind) {
-    indicator.addEventListener('click', function () {
-        sectionIndex = ind
-        setIndex()
-        indicator.classList.add('selected')
-    })
-})
-
-leftArrow.addEventListener('click', function () {
-    sectionIndex = (sectionIndex > 0) ? sectionIndex - 1 : 0
-    setIndex()
-    indicatorParents.children[sectionIndex].classList.add('selected');
-})
-
-rightArrow.addEventListener('click', function () {
-    sectionIndex = (sectionIndex < 3) ? sectionIndex + 1 : 3
-    setIndex()
-    indicatorParents.children[sectionIndex].classList.add('selected');
-})
-
-
-//reveal on scroll
-window.addEventListener('scroll', reveal)
-
-function reveal() {
-    var reveals = document.querySelectorAll('.reveal')
-
-    for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight
-        var revealTop = reveals[i].getBoundingClientRect().top
-        var revealPoint = 150
-
-        if (revealTop < windowHeight - revealPoint) {
-            reveals[i].classList.add('active')
-        } else {
-            reveals[i].classList.remove('active')
-        }
+    if(revealtop < windowheight - revealpoint){
+      reveals[i].classList.add('active');
     }
-
-
+    else{
+      reveals[i].classList.remove('active');
+    }
+  }
 }
-
-console.log(document.querySelectorAll('.reveal'))
